@@ -22,7 +22,7 @@ public class CategoryEntity {
     @Column(nullable = false, unique = true)
     private String name;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "category_id", cascade = CascadeType.ALL)
     private List<ProductEntity> products;
 
 	public CategoryEntity() {

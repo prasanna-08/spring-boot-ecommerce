@@ -66,10 +66,12 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.example</groupId>
-			<artifactId>employeesystem</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+    		<groupId>org.projectlombok</groupId>
+    		<artifactId>lombok</artifactId>
+    		<version>1.18.30</version>  <!-- Use the latest version -->
+    		<scope>provided</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>

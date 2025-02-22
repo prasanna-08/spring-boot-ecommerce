@@ -26,7 +26,7 @@ public class UserEntity {
     private String password;
 
     @Column(nullable = false)
-    private String name;
+    private String userName;
 
     @Column(nullable = false)
     private String role; // CUSTOMER or ADMIN
@@ -49,7 +49,7 @@ public class UserEntity {
 		this.id = id;
 		this.email = email;
 		this.password = password;
-		this.name = name;
+		this.userName = name;
 		this.role = role;
 		this.createdAt = createdAt;
 	}
@@ -93,13 +93,13 @@ public class UserEntity {
 
 
 	public String getName() {
-		return name;
+		return userName;
 	}
 
 
 
 	public void setName(String name) {
-		this.name = name;
+		this.userName = name;
 	}
 
 

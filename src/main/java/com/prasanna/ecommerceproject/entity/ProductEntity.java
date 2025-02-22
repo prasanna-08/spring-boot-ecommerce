@@ -1,6 +1,7 @@
 package com.prasanna.ecommerceproject.entity;
 
 import java.math.BigDecimal;
+
 import java.time.LocalDateTime;
 import java.util.Locale.Category;
 
@@ -37,7 +38,7 @@ public class ProductEntity {
 
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
-    private Category category_id;
+    private CategoryEntity category_id;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
@@ -47,7 +48,7 @@ public class ProductEntity {
 	}
 
 	public ProductEntity(Long id, String name, String description, BigDecimal price, int stockQuantity,
-			Category category_id, LocalDateTime createdAt) {
+			CategoryEntity category_id, LocalDateTime createdAt) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -98,11 +99,11 @@ public class ProductEntity {
 		this.stockQuantity = stockQuantity;
 	}
 
-	public Category getCategory_id() {
+	public CategoryEntity getCategory_id() {
 		return category_id;
 	}
 
-	public void setCategory_id(Category category_id) {
+	public void setCategory_id(CategoryEntity category_id) {
 		this.category_id = category_id;
 	}
 
